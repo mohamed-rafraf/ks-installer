@@ -45,4 +45,4 @@
 
 - name: ks-events | Apply fluentbit operator custom resources
   shell: >
-    {{ bin_dir }}/kubectl apply -f {{ kubesphere_dir }}/fluentbit-operator
+    {{ bin_dir }}/kubectl apply --recursive=true -f {{ kubesphere_dir }}/fluentbit-operator
